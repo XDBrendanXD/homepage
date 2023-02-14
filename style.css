@@ -8,24 +8,47 @@
   
   width: 100vw;
   height: 100vh;
-  background-color: #E396DF;
+  background-color: #E16F7C;
 }
 
 .text {
-  height: 100vh;
+  position: absolute;
   display: flex;
   justify-content: center; 
+  color: #E16F7C;
   align-items: center;
   font-size: 150px;
   z-index: 50;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%) rotateZ(-10deg);
+  font-family: mono;
+  
 }
 
 .circle {
   left: 20px;
-  top: 20px;
+  top: 200px;
   position: absolute;
   background-color: #F6EFEE;
   width: 50px;
   height: 50px;
   border-radius: 100px;
+  z-index: 0;
+}
+
+.button {
+  position: absolute;
+  z-index: 100;
+  top: 70%;
+  left: 50%;
+  background-color: transparent;
+  font-size: 100px;
+  transform: translate(-50%);
+  border: #E396DF;
+  font-family: cursive;
+  cursor: pointer;
+  color: #E16F7C;
+  
+  
 }
